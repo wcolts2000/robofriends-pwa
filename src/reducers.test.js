@@ -84,4 +84,14 @@ describe("requestRobots", () => {
       isPending: false
     });
   });
+
+  it("handles requesting robots API", () => {
+    const expectedAction = {
+      type: REQUEST_ROBOTS_PENDING,
+      payload: {
+        isPending: true,
+        robots: []
+      }
+    };
+  });
 });
